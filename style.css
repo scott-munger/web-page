@@ -88,7 +88,7 @@ body{
     color: white;
     border-radius: 8px;
     margin-left: 20px;
-    margin-right: 130px;
+    margin-right: 100px;
     padding-top: 5px;
     padding-bottom: 5px;
     background: var(--color-blue);
@@ -116,7 +116,7 @@ body{
     width: 100%;
     height: 200px;
     max-height: 220px;
-    padding-right: 20px;
+    padding-left: 0px;
     object-fit: cover;
 
 
@@ -142,6 +142,7 @@ body{
     width: 100%;
     height: 500px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 .right{
     
@@ -153,81 +154,62 @@ body{
 
 
 
-.third_section{
-    margin-left: 20px;
-}
-.third_section h2{
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: justify;
-    margin-right: 90px;
-    
-}
-.third_section p{
-    margin-bottom: 20px;
-}
 .promo_section{
     width:100%;
     min-height: 50px;
     background: var(--color-blue);
     padding-top: 50px ;
     padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   
 }
-.promo_section p{
-    color: white;
-    font-size: 12px;
-    margin-left: 20px;
-    margin-top: 50px;
-    font-weight: 900;
-    float: left;
-    margin-right: 30px;
-    
-}
 
+#rubrique-promo h4{
+    text-decoration: overline;
+    color: white;
+    margin-left: 5%;
+}
+#rubrique-promo p{
+    margin-left: 5%;
+    color: white;
+}
 #birth_section{
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }
-#birth img{
-    width: 70%;
-    margin-left: 10%;
-    border: 2px solid white ;
-    border-radius: 15px;
-}
-#h5{
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 25px;
-
+#birth_section div img{
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 #birth h4{
     color: white;
-    font-weight: bold;
-    text-align: center;
     text-decoration: overline;
-    margin-bottom: 20px;
-
-
 }
-#birth h6{
+#h5{
     color: white;
-    padding-left: 20px;
-
+    font-size: 15px;
+    margin-top: 5px;
 }
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) and (orientation: portrait){
     .category{
         width: 100%;
         height: 300px;
-        margin-right: 6%;
+    
         
 
     }
     .category img{
         height: 300px;
-        padding-left: 5%;
+        padding-left: 0%;
     }
     .category h2{
         margin-right: 170px;
@@ -256,6 +238,9 @@ body{
         font-size: 20px;
     
     }
+    .promo_section{
+        grid-template-columns: repeat(1,1fr);
+    }
     .promo_section p{
         margin-bottom: 50px;
         font-size: 14px;
@@ -272,11 +257,15 @@ body{
         padding-left: 10px;
         margin-right: 150px;
     }
+    #birth_section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #birth_section {
+        margin-right: 8%;
+    }
     #birth h4{
-        text-align: center;
-        margin-right: 10%;
-        margin-top: 0px;
-        font-size: 20px;
+        margin-left: 15%;
     }
 
 }
