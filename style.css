@@ -141,7 +141,7 @@ body{
 }
 .left img{
     width: 100%;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
     margin-bottom: 20px;
 }
@@ -172,11 +172,31 @@ body{
     grid-template-columns: repeat(2,1fr);
   
 }
+#promo_section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-left: 80px;
+    width: 100%;
 
+}
+#promo_section div img{
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid red;
+   
+  
+    
+}
+#h6{
+    margin-left: 12px;
+    font-size: 13px;
+   color: white;
+   margin-bottom: 70px;
+}
 #rubrique-promo h4{
     text-decoration: overline;
     color: white;
-    margin-left: 5%;
+    margin-left: 80px;
 }
 #rubrique-promo p{
     margin-left: 5%;
@@ -185,6 +205,8 @@ body{
 #birth_section{
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    float: right;
+    margin-left: 80px;
 }
 #birth_section div img{
     width: 80%;
@@ -194,11 +216,13 @@ body{
 #birth h4{
     color: white;
     text-decoration: overline;
+    margin-left: 80px;
 }
 #h5{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 5px;
+   
 }
 
 
@@ -214,6 +238,9 @@ body{
     
         
 
+    }
+    #rubrique-promo h4{
+        margin-left: 9px;
     }
     .right{
         margin-left: 0px;
@@ -245,8 +272,8 @@ body{
     }
     #h5{
        margin-bottom: 20px;
-        margin-left: 100px;
-        font-size: 20px;
+        margin-left: 24px;
+        font-size: 13px;
     
     }
     .promo_section{
@@ -270,13 +297,24 @@ body{
     }
     #birth_section{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     #birth_section {
-        margin-right: 8%;
+        margin-left: 10px;
+        margin-right: 40px;
     }
+   
     #birth h4{
-        margin-left: 15%;
+        margin-left: 23%;
+    }
+    #rubrique-promo h4{
+        text-decoration: overline;
+        color: white;
+        margin-left: 80px;
+    }
+    #h6{
+        font-size: 10px;
+        margin-left: 4px;
     }
 
 }
