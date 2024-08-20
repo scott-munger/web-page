@@ -129,10 +129,11 @@ body{
 .item{
     flex: 1;
 }
-.left{
+.left p{
   
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 30px;
     
 }
 .left h4{
@@ -146,12 +147,19 @@ body{
 }
 .right{
     
-    margin-left: 25px;
+    margin-left: 30px;
     margin-top: 20px;
-    margin-right: 2%;
+ 
+   
+}
+.right p{
+    text-align: justify;
    
 }
 
+.third_section p{
+    text-align: justify;
+}
 
 
 .promo_section{
@@ -206,6 +214,9 @@ body{
     
         
 
+    }
+    .right{
+        margin-left: 0px;
     }
     .category img{
         height: 300px;
